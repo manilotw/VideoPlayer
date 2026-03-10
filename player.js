@@ -83,9 +83,9 @@ function createPlayer({
 
     function toggleVolumeMuteBtns(){
       if (player.getVolume() > 0){
-        activateMuteBtn();
-      } else {
         activateVolumeButton();
+      } else {
+        activateMuteBtn();
       }
     }
 

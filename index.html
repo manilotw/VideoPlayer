@@ -21,19 +21,31 @@
         justify-content: center; 
         align-items: center; 
       }
-      .buttons {
-        background: black; 
+      .player__controls {
+        background: black;
         display: flex;
-        justify-content: flex-start; 
-        align-items: flex-end;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
       }
-      .button {
+      .player__controls-left {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .player__button {
         border: none;
         cursor: pointer;
         background: transparent;
-        margin: 10px;
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
       }
-      .icon {
+      .player__icon {
         color: white;
         font-size: 20px;
       }
@@ -43,23 +55,23 @@
   <body>
     <div id="player" class="player">    
           <div class="js-video-container display"></div>
-          <div class="buttons">
-            <div>
-              <button class="js-play-button button">
-                <i  class="fa fa-play icon" aria-hidden="true"></i>
+          <div class="player__controls">
+            <div class="player__controls-left">
+              <button class="js-play-button player__button">
+                <i  class="fa fa-play player__icon" aria-hidden="true"></i>
               </button>
-              <button class="js-pause-button button" hidden>
-                <i  class="fa fa-pause icon" aria-hidden="true"></i>
+              <button class="js-pause-button player__button" hidden>
+                <i  class="fa fa-pause player__icon" aria-hidden="true"></i>
               </button>
-              <button class="js-volume-button button" hidden>
-                <i class="fa fa-volume-up icon" aria-hidden="true"></i>
+              <button class="js-volume-button player__button" hidden>
+                <i class="fa fa-volume-up player__icon" aria-hidden="true"></i>
               </button>
-              <button class="js-mute-button button">
-                <i class="fa fa-volume-off icon" aria-hidden="true"></i>
+              <button class="js-mute-button player__button">
+                <i class="fa fa-volume-off player__icon" aria-hidden="true"></i>
               </button>
             </div>
-            <button class="js-fullscreen-button button">
-              <i class="fa fa-expand icon" aria-hidden="true"></i>
+            <button class="js-fullscreen-button player__button">
+              <i class="fa fa-expand player__icon" aria-hidden="true"></i>
             </button>
           </div>
     </div>
