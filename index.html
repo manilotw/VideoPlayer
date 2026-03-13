@@ -5,9 +5,11 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="icon" href="fonts/video-svgrepo-com.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
       body {
         display: flex;
+        margin: 0;
       }
 
       .player {
@@ -51,12 +53,17 @@
         padding: 0;
       }
 
+      .player__button[hidden] {
+        display: none;
+      }
+
       .player__icon {
         color: white;
         font-size: 20px;
       }
     </style>
   </head>
+
   <body>
     <div id="player" class="player">
       <div class="js-video-container display"></div>
